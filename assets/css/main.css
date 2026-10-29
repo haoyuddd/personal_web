@@ -6970,3 +6970,96 @@
     #main-content {
         display: none;
     }
+    /*event logs*/
+    
+    .event-logs {
+        max-width: 720px;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        color: #292d2c;
+    }
+    
+    .event-log-document h1 {
+        font-size: 38px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        line-height: 1.3;
+        margin: 0 0 15px;
+    }
+    
+    .event-logs h2 {
+        font-size: 1.35em;
+        color: var(black);
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        line-height: 1.75em;
+        margin: 0 0 1em 0;
+        text-transform: uppercase;
+    }
+    
+    .event-log-entry {
+        display: grid;
+        grid-template-columns: 90px minmax(0, 1fr);
+        gap: 18px;
+        margin: 0 0 1.5rem;
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: left;
+    }
+    
+    .event-log-entry time {
+        color: black;
+        font-weight: 800;
+        font-size: 14px;
+        padding-top: 0px;
+        white-space: nowrap;
+    }
+    
+    .event-log-entry p {
+        color: inherit;
+        margin: 0 0 .5rem;
+        font-size: inherit;
+        line-height: inherit;
+        letter-spacing: 0;
+    }
+    
+    .event-logs a,
+    .event-log-document a {
+        color: inherit;
+        border: 0;
+        text-decoration: underline;
+        text-decoration-color: #83bcae;
+        text-underline-offset: 4px;
+    }
+    
+    .event-logs a:hover,
+    .event-log-document a:hover {
+        color: #087660;
+    }
+    
+    .event-logs a:focus-visible,
+    .event-log-document a:focus-visible {
+        outline: 2px solid #087660;
+        outline-offset: 4px;
+    }
+    
+    .event-logs>p {
+        color: inherit;
+        letter-spacing: 0;
+    }
+    
+    .event-log-page {
+        margin: 0;
+        color: #292d2c;
+        background: white;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+    
+    .event-log-document {
+        max-width: 720px;
+        margin: 60px auto;
+        padding: 0 24px;
+    }
