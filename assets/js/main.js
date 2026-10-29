@@ -6,9 +6,9 @@
 
 $(function() {
     // $("#header").load("header.html");
-    $("#sociallink").load("../pre-set/sociallink.html");
-    $("#footer").load("../pre-set/footer.html");
-    $("#publication").load("../pre-set/publication.html");
+    $("#sociallink").load("../../pre-set/sociallink.html");
+    $("#footer").load("../../pre-set/footer.html");
+    $("#publication").load("../../pre-set/publication.html");
 
 });
 
@@ -170,7 +170,7 @@ $(function() {
     //The popup doc for wechat QR-code
     // Get the modal
     var modal = document.getElementById("comingsoon");
-    var modal = document.getElementById("wechat");
+    // var modal = document.getElementById("wechat");
 
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
