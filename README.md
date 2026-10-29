@@ -1,5 +1,5 @@
 # Haoyu Dong Personal Website
-www.haoyud.com (not in use since 2025)
+haoyud.com (not in use since 2025)
 
 updating 2025.6.4
 ---
