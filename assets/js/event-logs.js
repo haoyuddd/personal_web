@@ -44,7 +44,12 @@
                 .filter(item => item.validDate)
                 .sort((a, b) => b.timestamp - a.timestamp || a.order - b.order)
                 .slice(0, limit);
-            if (!entries.length) return; // Keep the accessible link if empty or invalid.
+            if (!entries.length) {
+                throw new Error(
+                    'No valid events found. Check #event-log-entries, ' +
+                    '.event-log-entry, and time[datetime] in ' + source.href
+                );
+            }; // Keep the accessible link if empty or invalid.
             const fragment = document.createDocumentFragment();
             for (const item of entries) {
                 const article = document.createElement('article');
@@ -63,8 +68,13 @@
             }
             container.replaceChildren(fragment);
             container.dataset.loaded = 'true';
-        } catch (_) {
-            // Leave the fallback link visible. Do not hide the rest of the homepage.
+        } catch (error) {
+            console.error('Could not load event logs:', source.href, error);
+
+            const message = document.createElement('p');
+            message.textContent =
+                'Event logs could not load. Open the full event log below.';
+            container.replaceChildren(message);
         }
     }
     loadEvents();
