@@ -36,7 +36,8 @@
             const entries = [...parsed.querySelectorAll('#event-log-entries > .event-log-entry')]
                 .map((entry, order) => {
                     const time = entry.querySelector('time[datetime]');
-                    const date = time ? .getAttribute('datetime');
+                    // const date = time ?.getAttribute('datetime');
+                    const date = time ? time.getAttribute('datetime') : null;
                     const timestamp = /^\d{4}-\d{2}-\d{2}$/.test(date || '') ? Date.parse(date + 'T00:00:00Z') : NaN;
                     const validDate = Number.isFinite(timestamp) && new Date(timestamp).toISOString().slice(0, 10) === date;
                     return { entry, time, date, timestamp, order, validDate };
