@@ -5008,21 +5008,20 @@ body.is-mobile #main>header {
 
 #footer {
     padding: 1em 0 0.5em 0;
-    background-color: #f3f3f3;
+    background-color: var(--background-light);
     text-align: center;
 }
 
 #footer .copyright {
-    color: rgba(29, 29, 29, 0.836);
+    color: var(--text-muted);
     font-size: 0.7em;
     letter-spacing: 0.225em;
     list-style: none;
-    padding: 0;
-    /* text-transform: uppercase; */
+    padding: 0
 }
 
 #footer .copyright li {
-    border-left: solid 1px rgba(255, 255, 255, 0.5);
+    border-left: solid 1px var(--text-muted);
     display: inline-block;
     line-height: 1em;
     margin-left: 1em;
@@ -5040,7 +5039,7 @@ body.is-mobile #main>header {
 }
 
 #footer .copyright li a:hover {
-    color: #fff;
+    color: inherit;
 }
 
 @media screen and (max-width: 480px) {
@@ -5096,7 +5095,7 @@ body.landing #page-wrapper-calli {
 }
 
 body.landing #footer {
-    background-color: #f3f3f3;
+    background-color: var(--background-light);
 }
 
 body.is-mobile.landing #page-wrapper {
@@ -5199,16 +5198,6 @@ body.is-mobile.landing #footer {
 .modal-body {
     padding: 2px 16px;
 }
-
-
-/* Modal Footer */
-
-
-/* .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-} */
 
 
 /* Add Animation */
