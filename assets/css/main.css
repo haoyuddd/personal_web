@@ -4360,9 +4360,9 @@ body.is-menu-visible #menu .close {
     -ms-transition: background-color 0.2s ease;
     transition: background-color 0.2s ease;
     background: #ffffff;
-    height: 3.5em;
+    height: 3.5rem;
     left: 0;
-    line-height: 3em;
+    line-height: 3.5rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -4375,7 +4375,7 @@ body.is-menu-visible #menu .close {
     -ms-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease;
     height: inherit;
-    left: 1.25em;
+    left: 1.25rem;
     line-height: inherit;
     position: absolute;
     top: 0;
@@ -4393,29 +4393,25 @@ body.is-menu-visible #menu .close {
     border-bottom: 0;
     color: inherit;
     font-weight: 900;
-    margin: 0 0 2.5em 0;
+    margin: 0;
     display: inline-block;
-    padding: 0.5em 0 0 calc(10%);
+    padding: 0.7rem 0 0 calc(10%);
 }
+
+
+/* this is the logo size */
 
 #header h1 a img {
     display: block;
-    width: 2em;
-    height: 2em;
+    width: 2.75rem;
+    height: 2.75rem;
 }
 
 @media screen and (max-width: 736px) {
     #header h1 a {
-        font-size: 0.8em;
+        font-size: inherent;
     }
 }
-
-
-/* 
-			#header .logo > * {
-				display: inline-block;
-				vertical-align: middle;
-			}*/
 
 #header nav {
     height: inherit;
@@ -4448,8 +4444,11 @@ body.is-menu-visible #menu .close {
 }
 
 #header nav>ul>li>a.menuToggle {
-    outline: 0;
-    position: relative;
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    padding: 0 1.25rem;
+    font-size: 1rem;
 }
 
 #header nav>ul>li>a.menuToggle:after {
@@ -5026,10 +5025,10 @@ body.is-mobile #main>header {
     line-height: 1em;
     margin-left: 1em;
     padding-left: 1em;
+    border-left: 0;
 }
 
 #footer .copyright li:first-child {
-    border-left: 0;
     margin-left: 0;
     padding-left: 0;
 }
